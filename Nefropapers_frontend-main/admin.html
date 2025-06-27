@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/png" href="/assets/logo-app.svg">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Nefropapers</title>
+    </head>
+    <body>
+        
+        <div id="main_container">
+
+            <section class="create-question">
+                
+                
+                <div class="prepare-question">
+                    <div class="edit">
+                        <span class="createBack">
+                            <a href="./home.html">
+                                <img src="assets/seta-esquerda.png" alt="">
+                            </a>
+                        </span>
+                        <p>Editar questão</p>
+                        <span class="editarQuestao"><i class='bx bxs-edit'></i></span>
+                    </div>
+                    
+                    <div class="questionContainer">
+                        <div class="edit-questao">
+                            <label for="Questao">Questao 1<span><i class='bx bxs-pencil'></i></span></label> 
+                            <div class="area-text">
+                                <textarea name="Questao" id="textQuest" placeholder="Enunciado..."></textarea>
+                                <span class="text-icon"><i class='bx bxs-pencil'></i></span>
+                            </div>   
+                        </div>
+                        
+                        <div class="filter-question">
+                            
+                            <label class="label-filter" for="topicos">Categoria (Máximo 3)</label>
+                            
+                            <div class="search">
+                                <input type="text" id="searchTopico" placeholder="Digite para procurar módulo">
+                                <span><i class='bx bx-search' ></i></span>
+                            </div>
+                            
+
+                        <!-- CRIAÇÃO DA CLASSE DE MÓDULOS  -->
+                        <div id="topicoSugestoes"></div>
+                        
+                        <div class="categoria">
+                        </div>
+                        
+                        <div class="gabarito">
+                            <button class="gab-btn1"><span><i class='bx bx-file'></i></span>Fazer gabarito</button>
+                            <div class="file-input-container">
+                                <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                                <label for="fileInput" class="custom-file-button">
+                                    <span><i class='bx bx-upload'></i></span> <span class="bu-text">Escolher arquivo</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="questions">
+                    
+                    <div class="question">
+                        <label for="A">A</label>
+                        <div class="input-question">
+                            <input type="text" name="A" placeholder="">
+                            <span class="icon-question"><i class='bx bxs-pencil' style='color:#b6b6b6'></i></span>
+                        </div>
+                        <div class="check-question">
+                            <label class="switch">
+                                <input type="checkbox" value="A">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <label for="B">B</label>
+                        <div class="input-question">
+                            <input type="text" name="B" placeholder="">
+                            <span class="icon-question"><i class='bx bxs-pencil' style='color:#b6b6b6'></i></span>
+                        </div>
+                        <div class="check-question">
+                            <label class="switch">
+                                <input type="checkbox" value="B">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <label for="C">C</label>
+                        <div class="input-question">
+                            <input type="text" name="C" placeholder="">
+                            <span class="icon-question"><i class='bx bxs-pencil' style='color:#b6b6b6'></i></span>
+                        </div>
+                        <div class="check-question">
+                            <label class="switch">
+                                <input type="checkbox" value="C">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <label for="D">D</label>
+                        <div class="input-question">
+                            <input type="text" name="D" placeholder="">
+                            <span class="icon-question"><i class='bx bxs-pencil' style='color:#b6b6b6'></i></span>
+                        </div>
+                        <div class="check-question">
+                            <label class="switch">
+                                <input type="checkbox" value="D">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <label for="E">E</label>
+                        <div class="input-question">
+                            <input type="text" name="E" placeholder="">
+                            <span class="icon-question"><i class='bx bxs-pencil' style='color:#b6b6b6'></i></span>
+                        </div>
+                        <div class="check-question">
+                            <label class="switch">
+                                <input type="checkbox" value="E">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subSection">
+                <div class="itemX">
+                    <p>item <strong>X</strong><span><i class='bx bxs-pencil' style='color:#b6b6b6'></i></span></p>
+                    <div class="explicacao-input-container">
+                        <input type="file" id="explicacaoInput" accept="image/*" style="display: none;">
+                        <label for="explicacaoInput" class="custom-file-button">
+                            <span><i class='bx bx-upload'></i></span> <span class="bu-text">Escolher arquivo</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="Explication">
+                    <label for="">Explicação</label>
+                    <textarea class="explication-text"></textarea>
+                </div>
+                
+                <div id="msgError"></div>
+                
+                <!-- <div class="saveBtn" >
+                    <button>Salvar</button>
+                </div>  -->
+                <div class="saveBtn">
+                    <button onclick="criarQuestao(topicosSelecionados)">Salvar</button>
+                </div>
+                
+            </div>
+            </section>
+
+            <section class="modal">
+                <div class="popUpImg">
+                    <img src="" alt="" class=popup-imagem>
+                </div>
+            </section>
+
+
+            <section class="modalEdit">
+                <div class="containerEdit">
+                </div>
+            </section>
+        
+<!-- Modal de Confirmação de Exclusão -->
+<div class="modalConfirmDelete">
+        <div class="containerConfirmDelete">
+        <p class="mensagem-delete">Deseja realmente excluir esta questão?</p>
+        <div class="botoes-delete">
+            <button class="btn-confirmar-delete">Confirmar</button>
+            <button class="btn-cancelar-delete">Cancelar</button>
+        </div>
+        </div>
+    </div>
+    
+        
+</div>
+    
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="js/adm.js"></script>
+    <!-- <script src="js/api.js"></script> -->
+    <!-- <script src="js/forms.js"></script> -->
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/integracao.js"></script>
+</body>
+</html>
+

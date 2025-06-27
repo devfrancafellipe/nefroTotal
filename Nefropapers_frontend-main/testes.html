@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" type="image/png" href="/assets/logo-app.svg">
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <title>Nefropapers</title>
+    </head>
+    <body>
+        
+        <div id="main_container">
+            
+            <!-- SESSÃO ONDE FICARA TODOS OS TESTES FEITOS PELO USUARIO -->
+            <section class="all-tests screen">
+                
+                <div class="header-teste">
+                    <a href="./home.html"><img class="allBackTets" src="./assets/seta-esquerda.png" alt=""></a>
+                    <p>Todos os testes</p>
+                </div>
+                
+                <div class="filter-header-testes">
+                    <div class="filter-input">
+                        <input type="text" placeholder="Procurar teste">
+                        <span class="lupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+                
+                <!-- SESSÃO FEITOS POR MIM -->
+                <!-- <div class="boxTest"> -->
+                    
+                    <!-- ACRESCENTEI UM ID PARA A INTEGRAÇÃO -->
+                <div class="boxTest" id="feitos-por-mim">
+                    <div class="titlebox">
+                        <p>Feitos por mim</p>
+                        <span><i class='bx bx-chevron-down' ></i></span>
+                    </div>
+                    <div class="all-histor"></div>
+                    
+                    <!-- SESSÃO TODOS OS TESTES -->
+                    <!-- <div class="boxTest"> -->
+                        
+                        <!-- ACRESCENTEI UM ID PARA A INTEGRAÇÃO -->
+                        <div class="boxTest" id="todos-os-testes">
+                            <div class="titlebox">
+                                <p>Todos os testes</p>
+                                <span><i class='bx bx-chevron-down' ></i></span>
+                            </div>
+
+                            <div class="all-histor"></div>
+                            
+                            <div class="creationIcon" onclick="toggleModal()">
+                                <span><i class="fa-solid fa-plus"></i></span>
+                                <div class="modalCreate">
+                                    <a href="./provas.html"><p class="newTest">Novo teste <span><i class='bx bx-file' ></i></span></p></a>
+                                    <div class="line"></div>
+                                    <a href="./admin.html"><p class="newQuestion">Nova Questão <span><i class="fa-regular fa-comment-dots"></i></span></p></a>
+                                </div>
+                            </div>        
+                        </div>    <!--   Estava faltando      -->
+                </div> <!--   Estava faltando      -->
+            </section>
+
+            
+
+            <div class="navigation" id="navBar">
+                <ul>
+                    <li class="house">
+                        <a href="./home.html"><span><i class="fa-solid fa-house"></i></span></a>
+                        <div class="label">Início</div>
+                    </li>
+                    <li class="book">
+                        <a href="./testes.html"><span><i class="fa-solid fa-book"></i></span></a>
+                        <div class="label">Provas</div>
+                    </li>
+                    <li class="clock">
+                        <a href="./historico.html"><span><i class="fa-regular fa-clock"></i></span></a>
+                        <div class="label">Histórico</div>
+                    </li>
+                    <div class="indicador"><span></span></div>
+                </ul>
+            </div>
+        
+        
+</div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="testes_api.js"></script>
+    <!-- <script src="home_api.js"></script> -->
+    <!-- <script src="js/adm.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/integracao.js"></script> -->
+</body>
+</html>
+
